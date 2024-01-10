@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Data Storage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add a Note</h2>
+    <form id="noteForm">
+        <label for="note">Note:</label><br>
+        <input type="text" id="note" name="note"><br>
+        <button type="submit">Add Note</button>
+    </form>
+    <h2>Your Notes</h2>
+    <div id="notesList"></div>
+    <script src="script.js"></script>
+    <input type="file" id="fileUpload" name="fileUpload" accept="image/*">
+</body>
+</html>
